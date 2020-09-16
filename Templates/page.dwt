@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- TemplateBeginEditable name="doctitle" -->
+		<title>Isak Grimstad</title>
+		<!-- TemplateEndEditable -->
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Pro|Crimson+Text&display=swap" rel="stylesheet">
+		<link href="../css/styles_01.css" rel="stylesheet" type="text/css">
+		<link href="../swiper-5.3.6/package/css/swiper.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../swiper-master/package/js/swiper.js"></script>
+		
+	<!-- TemplateBeginEditable name="head" -->
+		<!-- TemplateEndEditable -->
+	</head>
+
+<body>
+<header>
+	<!-- TemplateBeginEditable name="Header animation on/off" -->
+  <div >
+	  <!-- TemplateEndEditable -->
+    <ul>
+      <li><a href="index.html">Isak Grimstad</a></li>
+      <li>Arkitekt</li>
+      <li>Grenseveien 11e</li>
+      <li>0571 Oslo</li>
+      <li>+47 465 18 374</li>
+      <li><a href="mailto:grimstad.isak@gmail.com">grimstad.isak(at)gmail.com</a></li>
+    </ul>
+    <br>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="01.html">1.</a></li>
+        <li><a href="02.html">2.</a></li>
+        <li><a href="03.html">3.</a></li>
+        <li><a href="04.html">4.</a></li>
+      </ul>
+    </nav>
+  </div>
+<br>
+</header>
+<!-- TemplateBeginEditable name="main" -->
+
+	<main>
+
+</main>
+		
+<!-- TemplateEndEditable -->
+	
+</body>
+</html>

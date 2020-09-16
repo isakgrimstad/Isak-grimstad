@@ -1,0 +1,551 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	color: black;
+	font-family: 'Crimson Text', serif;
+	font-size: 1.9em;
+	line-height: 1.1;
+	width: 100%;
+	margin: 0px;
+	min-width: 300px;
+}
+
+
+header {
+ 	background: none;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align:top;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-right: 0%;
+	border: 0px;
+	width: 31%;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 5%;
+}
+
+nav {
+	margin: 0px;
+	background: none;
+}
+
+
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-position: inside;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: black;
+ 
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+	color: #bad8eb;
+}
+
+
+.currentLink {
+   color: #bad8eb;
+   padding: 0px;
+   margin: 0px;
+}
+
+.currentLink a {
+   color: #bad8eb;
+}
+
+.currentLink a:link {
+   color: #bad8eb;
+}
+
+.currentLink a:visited {
+   color: #bad8eb;
+}
+
+.currentLink a:hover {
+   color: #bad8eb;
+}
+
+main {
+	background: none;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align:top;
+	width: 58%;
+	margin-top: 5%;
+	margin-right: 5%;
+	padding: 0px 0px 5% 0px;
+	border: 0px;	
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  display:inline-block; /* important */
+  background-color: transparent;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  color: black;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main, .accordion{
+  -webkit-transition: 3.3s;
+  -moz-transition: 3.3s;
+  transition: 3.3s;     
+  
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.main{
+  overflow: hidden;
+}
+
+.accordion{
+  margin-left: 0em;   
+}
+
+.accordion:hover .title{
+  margin-left: -600px;
+}
+
+
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: transparent;
+  color: #bad8eb;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  background-color: transparent;
+  display: none;
+  overflow: hidden;
+}
+
+.em-tight {
+  letter-spacing: -0.03em;
+}
+
+
+
+/* Swiper custom styling */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 0%;
+  width: 30%;
+  height: 100%;
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  z-index: 10;
+  opacity: 0;
+	
+}
+
+.swiper-button-next {
+  cursor: url("../cursors/cursor-right.png"), auto;
+	
+}
+
+.swiper-button-prev {
+  cursor: url("../cursors/cursor-left.png"), auto;
+	
+}
+
+		
+/* Animations */
+
+			.bounce-in-left {
+				-webkit-animation: bounce-in-left 1.1s both;
+						animation: bounce-in-left 1.1s both;
+			}
+
+			@-webkit-keyframes bounce-in-left {
+			  0% {
+				-webkit-transform: translateX(-600px);
+						transform: translateX(-600px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+				opacity: 0;
+			  }
+			  38% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+				opacity: 1;
+			  }
+			  55% {
+				-webkit-transform: translateX(-68px);
+						transform: translateX(-68px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  72% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  81% {
+				-webkit-transform: translateX(-28px);
+						transform: translateX(-28px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  90% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  95% {
+				-webkit-transform: translateX(-8px);
+						transform: translateX(-8px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  100% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			}
+			@keyframes bounce-in-left {
+			  0% {
+				-webkit-transform: translateX(-600px);
+						transform: translateX(-600px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+				opacity: 0;
+			  }
+			  38% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+				opacity: 1;
+			  }
+			  55% {
+				-webkit-transform: translateX(-68px);
+						transform: translateX(-68px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  72% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  81% {
+				-webkit-transform: translateX(-28px);
+						transform: translateX(-28px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  90% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  95% {
+				-webkit-transform: translateX(-8px);
+						transform: translateX(-8px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  100% {
+				-webkit-transform: translateX(0);
+						transform: translateX(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			}
+
+			.bounce-in-top {
+				-webkit-animation: bounce-in-top 1.0s both;
+						animation: bounce-in-top 1.0s both;
+			}
+
+			@-webkit-keyframes bounce-in-top {
+			  0% {
+				-webkit-transform: translateY(-500px);
+						transform: translateY(-500px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+				opacity: 0;
+			  }
+			  38% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+				opacity: 1;
+			  }
+			  55% {
+				-webkit-transform: translateY(-65px);
+						transform: translateY(-65px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  72% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  81% {
+				-webkit-transform: translateY(-28px);
+						transform: translateY(-28px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  90% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  95% {
+				-webkit-transform: translateY(-8px);
+						transform: translateY(-8px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  100% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			}
+			@keyframes bounce-in-top {
+			  0% {
+				-webkit-transform: translateY(-500px);
+						transform: translateY(-500px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+				opacity: 0;
+			  }
+			  38% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+				opacity: 1;
+			  }
+			  55% {
+				-webkit-transform: translateY(-65px);
+						transform: translateY(-65px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  72% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  81% {
+				-webkit-transform: translateY(-28px);
+						transform: translateY(-28px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  90% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			  95% {
+				-webkit-transform: translateY(-8px);
+						transform: translateY(-8px);
+				-webkit-animation-timing-function: ease-in;
+						animation-timing-function: ease-in;
+			  }
+			  100% {
+				-webkit-transform: translateY(0);
+						transform: translateY(0);
+				-webkit-animation-timing-function: ease-out;
+						animation-timing-function: ease-out;
+			  }
+			}
+
+
+/* Screensaver ball styling */
+  .message {
+    display: block;
+    width: 467px;
+    margin: 0;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    /* ball animation */
+    -webkit-animation: moveX 8s linear 0s infinite alternate, moveY 17.3s linear 0s infinite alternate;
+    -moz-animation: moveX 8s linear 0s infinite alternate, moveY 17.3s linear 0s infinite alternate;
+    -o-animation: moveX 8s linear 0s infinite alternate, moveY 17.3s linear 0s infinite alternate;
+    animation: moveX 8s linear 0s infinite alternate, moveY 17.3s linear 0s infinite alternate ;
+	animation-delay: 20s;
+  }
+  
+  /* animation keyframes */
+
+  @-webkit-keyframes moveX {
+    /* screen width - width of message */
+    from { left: 0; } to { left: calc(100% - 467px); }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: calc(100% - 467px); }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: calc(100% - 467px); }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: calc(100% - 467px); }
+  }
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 26px); }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 26px); }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 26px); }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 26px); }
+  }  
+
+
+
+
+/* Media queries */
+
+/* 01: Smaller text*/
+@media only screen and (max-width: 1500px) {body {font-size: 1.6em;} .accordion {font-size: 1.7rem;}}
+
+/* 02: Smaller text*/
+@media only screen and (max-width: 1400px) {body {font-size: 1.5em;} .accordion {font-size: 1.5rem;}}
+
+/* 03: Smaller text*/
+@media only screen and (max-width: 1300px) {body {font-size: 1.4em;} .accordion {font-size: 1.3rem;}}
+
+/* 03: Smaller text*/
+@media only screen and (max-width: 1200px) {body {font-size: 1.3em;} .accordion {font-size: 1.3rem;}}
+
+/* 04: Smaller text*/
+@media only screen and (max-width: 1100px) {body {font-size: 1.2em;} .accordion {font-size: 1.2rem;}}
+
+/* 05: Break point */
+@media only screen and (max-width: 1000px) {
+  	body {
+    	background-color: none;
+		font-size: 1.2em;
+		width: 100%;
+		overflow-x: hidden;
+		
+	}
+	header {
+		width: 100%;
+		display: block;
+		position: static;
+		
+  	}
+
+	nav ul li{
+		display: inline;
+		margin-right: 2.5%;
+	}
+	
+	
+	main {
+		width: 100%;
+		margin-left: 5%;
+		padding-right: 10%;
+		display: block;
+		
+	}
+	
+	main figure {
+		width: 100%;
+		
+	}
+	
+	.accordion {
+  font-size: 1.2rem;
+}
+}
+
+/* 06: Smaller text*/
+@media only screen and (max-width: 700px) {body {font-size: 1.1em;} .accordion {font-size: 1.1rem;}}
+
+/* 07: Smaller text*/
+@media only screen and (max-width: 600px) {body {font-size: 1em;} .accordion {font-size: 1rem;}}
+
+/* 08: Smaller text*/
+@media only screen and (max-width: 550px) {body {font-size: 0.97em; background: #A564E9;} .accordion {font-size: 0.97rem;}}
+
+/* 09: Smaller text*/
+@media only screen and (max-width: 500px) {body {font-size: 0.87em;background: #88C5DB;} .accordion {font-size: 0.87rem;}}
+
+/* 10: Smaller text*/
+@media only screen and (max-width: 450px) {body {font-size: 0.77em; background: yellow;} .accordion {font-size: 0.77rem;}}
+
+/* 11: Smaller text*/
+@media only screen and (max-width: 400px) {body {font-size: 1em; background: red;} .accordion {font-size: 1rem;}}
+
+/* 11: Smaller text*/
+@media only screen and (max-width: 350px) {body {font-size: 0.9em; background: pink;} .accordion {font-size: 0.9rem;}}
+		
+		
+		
+			
+		
