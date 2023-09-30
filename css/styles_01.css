@@ -354,7 +354,7 @@ opacity: 1;
 	left: 0;
 	transform: translateX(-120%) translateY(-120%) rotateZ(0);
 	position: fixed;
-	animation-delay: 1s;
+	animation-delay: 5s;
 	z-index: 999999;
 }
 
